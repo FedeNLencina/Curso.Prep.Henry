@@ -1,6 +1,13 @@
 // No cambies los nombres de las funciones.
 
 function obtenerMayor(x, y) {
+  if (x>y){
+    return x;
+  } else if (y>x){
+     return y;
+  } else {
+    return x;
+  }
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
@@ -8,6 +15,13 @@ function obtenerMayor(x, y) {
 }
 
 function saludo(idioma) {
+  if(idioma=="aleman"){
+    return "Guten Tag!";
+  } else if (idioma== "mandarin"){
+    return "Ni Hao!";
+  } else {
+    return "Hello!";
+  }
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
@@ -17,12 +31,22 @@ function saludo(idioma) {
 }
 
 function esDiezOCinco(numero) {
+  if (numero == 10 || numero == 5){
+    return true;
+  } else{
+    return false;
+  }
     // Devuelve "true" si "numero" es 10 o 5
     // De lo contrario, devuelve "false"
     // Tu código:
 }
 
 function estaEnRango(numero) {
+  if(numero > 20 && numero < 50){
+    return true;
+  } else{
+    return false;
+  }
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
